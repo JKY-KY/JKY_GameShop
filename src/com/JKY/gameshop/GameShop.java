@@ -1,5 +1,7 @@
 package com.JKY.gameshop;
 
+import java.util.Scanner;
+
 public class GameShop {
 	
 	public static void main(String[] args) {
@@ -22,6 +24,14 @@ public class GameShop {
 		
 		System.out.println(menu);
 		String[] menus = menu.split("/");
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("원하시는 게임 장르를 입력해주세요 : ");
+		
+		String 게임장르 = scanner.next();
+		System.out.println("고객님은 " + 게임장르 + " 장르를 선택하셨습니다!");
+		scanner.close();
+		
 		return;
 	}
 }
