@@ -3,6 +3,9 @@ package com.JKY.gameshop;
 public class GameShop {
 	
 	public static void main(String[] args) {
+		/**
+		 * stringbuilder ==> stringbuffer로
+		 */
 		GameType game = GameType.RPG;
 		System.out.println("JK 게임샵에 오신걸 환영합니다!");
 		GameType gameTypes[] = GameType.values();
@@ -19,5 +22,6 @@ public class GameShop {
 		
 		System.out.println(menu);
 		String[] menus = menu.split("/");
+		return;
 	}
 }
